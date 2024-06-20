@@ -1,0 +1,6 @@
+package com.hako.eCommerce.config;
+
+public class JwtConstant {
+  public static final String SECRET_KEY = "MIIBITANBgkqhkiG9w0BAQEFAAOCAQ4AMIIBCQKCAQBplDdVve5ap43wsKtwSXxK10YX3FBQzveep4a/uP8bSjwdOutfnWZiMkmflUI6NIfOOCHBkA2mt2EZ49S8DiAdhrox6GzG8Z+MLLrUyZ47HnNYonoQLu/1hg4FgPYRhEr14iSkGi2/Zu4xnJmr9heBYjAMbRoWd7wwsb/HDbmeMbt37nu2XpURgdnkJhM5EjCx3XWrckcMibnQ4+bI9ONH8vZQ/uBkcqpQioxWSSdIG6o6UKVbK8vC6aYDVkwE7NF+e5y3uOLWH9seK4MOf7cXnocL3jkmyULKDg+mUdwyZpbhTQXRjkwsTV7fYfH/RCAORtWNWNMTdQ5m+vmeVdQbAgMBAAE=";
+  public static final String JWT_HEADER = "Authorization";
+}
