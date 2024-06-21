@@ -1,9 +1,12 @@
 package com.hako.eCommerce.entities;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import org.springframework.cglib.core.Local;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -79,4 +82,6 @@ public class Product {
   @ManyToOne
   @JoinColumn(name = "category_id")
   private Category category;
+
+  private LocalDateTime createdAt;
 }

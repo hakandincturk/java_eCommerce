@@ -15,7 +15,7 @@ import com.hako.eCommerce.config.JwtProvider;
 import com.hako.eCommerce.config.PasswordEncoder;
 import com.hako.eCommerce.entities.User;
 import com.hako.eCommerce.repository.abstarcts.UserRepository;
-import com.hako.eCommerce.business.concretes.UserManager;
+import com.hako.eCommerce.business.concretes.CustomUserService;
 
 import com.hako.eCommerce.dto.User.requests.LoginRequest;
 import com.hako.eCommerce.dto.User.responses.AuthResponse;
@@ -31,9 +31,9 @@ public class AuthController {
   private UserRepository userRepository;
   private JwtProvider jwtProvider;
   private PasswordEncoder passwordEncoder;
-  private UserManager userManager;
+  private CustomUserService userManager;
 
-  public AuthController(UserRepository userRepository,JwtProvider jwtProvider, PasswordEncoder passwordEncoder, UserManager userManager) {
+  public AuthController(UserRepository userRepository,JwtProvider jwtProvider, PasswordEncoder passwordEncoder, CustomUserService userManager) {
     this.userRepository = userRepository;
     this.jwtProvider = jwtProvider;
     this.passwordEncoder = passwordEncoder;
